@@ -1,0 +1,34 @@
+// GlassDesk persistence schema.
+// NOTE: the session-service (bun:sqlite, port 3030) is the sole writer/reader
+// of these tables — it stores timestamps as ISO TEXT strings for zero
+// format-mismatch. Prisma models mirror the exact same shape so `db:push`
+// and the service DDL stay in sync. The Next.js app itself never queries them.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model DesktopSession {
+  code      String // 6-digit session code (primary key)
+  state     String // full DesktopState JSON — the "GlassDesk HD" volume snapshot
+  createdAt String
+  updatedAt String
+
+  @@id([code])
+}
+
+model SessionParticipant {
+  id       String // cuid-ish
+  code     String
+  name     String
+  seat     String // host | guest
+  joinedAt String
+  leftAt   String?
+
+  @@id([id])
+}

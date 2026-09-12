@@ -1,0 +1,49 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Environment
+.env
+.env*.local
+!.env.example
+
+# Database
+db/*.db
+db/*.db-journal
+db/*.db-wal
+*.sqlite
+*.sqlite3
+
+# Logs & PIDs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+bun.lockb
+*.pid
+
+# Archives & Temporary artifacts
+*.tar
+*.gz
+*.zip
+*.tmp
+.zresults/
+.zscripts/
+upload/
+download/
+
+# AI & Session residue
+.agents/
+.claude/
+.codex/
+*.handoff.md
+HANDOFF.md
+worklog.md
+agent-ctx/
+
+# OS
+Thumbs.db
+.DS_Store
