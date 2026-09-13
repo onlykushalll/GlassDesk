@@ -68,9 +68,8 @@ GlassDesk includes a comprehensive ecosystem of collaborative virtual applicatio
 
 ### Installation
 
-1. **Clone the repository**:
+1. **Navigate to the extracted codebase directory**:
    ```bash
-   git clone https://github.com/onlykushalll/GlassDesk.git
    cd GlassDesk
    ```
 
@@ -112,6 +111,6 @@ GlassDesk is built for secure, private collaboration:
 
 ---
 
-## License
+## License & Rights
 
-This project is licensed under the MIT License — see the [`LICENSE`](./LICENSE) file for details.
+This codebase is proprietary and confidential. Licensed exclusively for evaluation, benchmarking, and authorized commercial deployment — see the [`LICENSE`](./LICENSE) file for complete details.

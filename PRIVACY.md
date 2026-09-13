@@ -33,7 +33,7 @@ You can clear all stored local data at any time via your browser settings.
 
 ---
 
-## 4. Contact
+## 4. Contact & Security Inquiries
 
-For security vulnerability reports or privacy inquiries, please open an issue on GitHub:
-https://github.com/onlykushalll/GlassDesk
+For security vulnerability reports, rights verification, or privacy inquiries, contact the vendor via the official marketplace delivery channel.
+

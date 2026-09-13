@@ -1,0 +1,28 @@
+services:
+  glassdesk:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: glassdesk-app
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - SESSION_PORT=4000
+      - NEXT_PUBLIC_SESSION_SERVER=http://localhost:4000
+      - DATABASE_URL=file:/app/db/custom.db
+    volumes:
+      - glassdesk_db:/app/db
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q --spider http://localhost:3000 || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  glassdesk_db:
+    name: glassdesk_db_volume

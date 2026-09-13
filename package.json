@@ -6,6 +6,7 @@
     "dev": "next dev -p 3000",
     "build": "next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/",
     "start": "next start -p 3000",
+    "test": "bun test",
     "lint": "eslint .",
     "db:push": "prisma db push --accept-data-loss",
     "db:generate": "prisma generate",
@@ -93,6 +94,6 @@
     "typescript": "^5"
   },
   "description": "Browser-based co-control virtual PC and collaborative workspace with WebSockets, WebRTC video calling, and liquid glass design system",
-  "author": "onlykushalll",
-  "license": "MIT"
+  "author": "Kushal",
+  "license": "UNLICENSED"
 }

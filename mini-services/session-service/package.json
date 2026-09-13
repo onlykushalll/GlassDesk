@@ -2,6 +2,7 @@
   "name": "glassdesk-session-service",
   "version": "1.0.0",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "bun --hot index.ts"
   },

@@ -40,6 +40,7 @@ IN NO EVENT SHALL THE AUTHORS, MAINTAINERS, OR COPYRIGHT HOLDERS BE LIABLE FOR A
 
 ---
 
-## 6. Open Source Licensing
+## 6. Commercial Licensing & Rights
 
-GlassDesk is open-source software licensed under the MIT License.
+GlassDesk is proprietary software. All rights, title, and interest in and to the software, documentation, and evaluation assets are retained by the author. Licensing is governed exclusively by commercial evaluation terms agreed upon through the vendor exchange.
+

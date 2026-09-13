@@ -120,21 +120,21 @@ function seedPeople(): Person[] {
     fav = false,
   ): Person => ({ id, name, role, email, phone, city, notes, fav, at: now });
   return [
-    mk("p-ada", "Ada Lovelace", "Mathematician", "ada@analytical-engine.org", "+44 20 7946 0958", "London",
+    mk("p-ada", "Ada Lovelace", "Mathematician", "ada-lovelace#internal", "Ext. 101", "London",
       "Sketched the first program before the hardware existed. Wants the loop demo on Friday — do not be late.", true),
-    mk("p-grace", "Grace Hopper", "Compiler pioneer", "grace.hopper@navy.mil", "+1 212 555 0147", "New York",
+    mk("p-grace", "Grace Hopper", "Compiler pioneer", "grace-hopper#internal", "Ext. 102", "New York",
       "Debugged a literal moth out of the Mark II. Ships compilers before breakfast.", true),
-    mk("p-linus", "Linus T.", "Kernel maintainer", "linus@kernel.org", "+358 40 555 0154", "Helsinki",
+    mk("p-linus", "Linus T.", "Kernel maintainer", "linus-torvalds#internal", "Ext. 103", "Helsinki",
       "Merge window opens Tuesday. Please do not top-post.", false),
-    mk("p-steve", "Steve J.", "Design review", "steve@cupertino.design", "+1 408 555 0100", "Cupertino",
+    mk("p-steve", "Steve J.", "Design review", "steve-jobs#internal", "Ext. 104", "Cupertino",
       "One more thing: rounded corners on the dock. And absolutely no beige.", false),
-    mk("p-guido", "Guido van R.", "Python emeritus", "guido@python.org", "+31 20 555 0189", "Amsterdam",
+    mk("p-guido", "Guido van R.", "Python emeritus", "guido-van-rossum#internal", "Ext. 105", "Amsterdam",
       "Retired gracefully. Still has strong opinions about whitespace.", false),
-    mk("p-margaret", "Margaret H.", "Apollo engineer", "margaret@apollo-onboard.dev", "+1 617 555 0132", "Boston",
+    mk("p-margaret", "Margaret H.", "Apollo engineer", "margaret-hamilton#internal", "Ext. 106", "Boston",
       "Landed on the Moon with 36KB of RAM. Ask her about the 1202 alarm.", false),
-    mk("p-ken", "Ken Thompson", "Unix co-creator", "ken@bell-labs.org", "+1 510 555 0121", "Berkeley",
+    mk("p-ken", "Ken Thompson", "Unix co-creator", "ken-thompson#internal", "Ext. 107", "Berkeley",
       "Built an OS on a PDP-7 because the game needed a file system. Currently tuning his chess engine.", false),
-    mk("p-radia", "Radia Perlman", "Network pioneer", "radia@spanning-tree.net", "+1 617 555 0145", "Boston",
+    mk("p-radia", "Radia Perlman", "Network pioneer", "radia-perlman#internal", "Ext. 108", "Boston",
       "The mother of the internet. Will not tolerate loops in your topology.", false),
   ].map((p, i) => ({ ...p, at: now - i * 1000 }));
 }
@@ -503,8 +503,8 @@ export default function ContactsApp({ win }: { win: WindowState }) {
             </h2>
             {field("Name", "name", { placeholder: "Ada Lovelace" })}
             {field("Role", "role", { placeholder: "Mathematician" })}
-            {field("Email", "email", { placeholder: "ada@example.org" })}
-            {field("Phone", "phone", { placeholder: "+44 20 7946 0958" })}
+            {field("Email", "email", { placeholder: "handle#internal" })}
+            {field("Phone", "phone", { placeholder: "Ext. 100" })}
             {field("City", "city", { placeholder: "London" })}
             {field("Notes", "notes", { textarea: true, placeholder: "Anything the other seat should know…" })}
             <div className="mt-1 flex items-center gap-2">
