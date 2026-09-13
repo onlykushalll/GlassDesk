@@ -101,6 +101,33 @@ GlassDesk includes a comprehensive ecosystem of collaborative virtual applicatio
 
 ---
 
+## Evaluation Benchmark & Verification Harness
+
+GlassDesk is equipped with an automated verification harness designed for evaluating autonomous coding agents and distributed systems consistency:
+
+* **Automated Unit & Integration Test Suites**:
+  ```bash
+  bun test
+  ```
+  Runs 18 test cases across 5 dedicated test modules:
+  - `tests/reducer.test.ts`: Deterministic window lifecycle, z-index elevation, and VFS recursive delete.
+  - `tests/session-service.test.ts`: SQLite WAL session persistence, token re-hydration, and ghost eviction.
+  - `tests/webrtc-signaling.test.ts`: Asymmetric offer/answer glare avoidance and candidate buffering.
+  - `tests/concurrency.test.ts`: Multi-seat operational convergence and monotonic sequence ordering.
+  - `tests/eval-tasks.test.ts`: Formal SWE agent evaluation benchmarks.
+
+* **Turn-Key SWE Agent Tasks**:
+  Complete benchmark definitions with problem statements, target files, and verifiers are documented in [`evals/BENCHMARK_TASKS.md`](./evals/BENCHMARK_TASKS.md).
+
+---
+
+## Architectural & Application Documentation
+
+- **System Architecture**: Detailed state machine, session resumption, and SQLite WAL engine: [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md).
+- **Application Ecosystem**: Deep dive into the real-time systems protocols behind the virtual terminal, task manager, code editor, and canvas: [`docs/APP_ECOSYSTEM.md`](./docs/APP_ECOSYSTEM.md).
+
+---
+
 ## Security & Compliance
 
 GlassDesk is built for secure, private collaboration:
