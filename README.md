@@ -113,4 +113,4 @@ GlassDesk is built for secure, private collaboration:
 
 ## License & Rights
 
-This codebase is proprietary and confidential. Licensed exclusively for evaluation, benchmarking, and authorized commercial deployment — see the [`LICENSE`](./LICENSE) file for complete details.
+This codebase is proprietary and confidential. Licensed exclusively for evaluation, benchmarking, and authorized commercial deployment — see the [`LICENSE.md`](./LICENSE.md) file for complete details.
